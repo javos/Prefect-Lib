@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="158px" height="36px" viewBox="0 0 158 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>demo-bottom-pattern</title>
+    <desc>Created with Sketch.</desc>
+    <g id="demo-bottom-pattern" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <polygon id="Triangle-Copy-5" fill="#CCCCCC" opacity="0.195265997" points="39.5 0 118.5 36 -39.5 36"></polygon>
+            <polygon id="Triangle-Copy-4" fill="#BFBFBF" opacity="0.195265997" points="118.5 0 197.5 36 39.5 36"></polygon>
+            <polygon id="Triangle-Copy-2" fill="#E8E7E7" opacity="0.819521949" points="79 0 158 36 0 36"></polygon>
+            <polygon id="Triangle-Copy" fill="#E9E9E9" opacity="0.624139695" points="0 0 79 36 0 36"></polygon>
+            <polygon id="Triangle-Copy-3" fill="#E9E9E9" opacity="0.624139695" points="158 0 158 36 79 36"></polygon>
+        </g>
+    </g>
+</svg>

@@ -33,6 +33,7 @@ const imagemin		= require('gulp-imagemin');
 const del			= require('del');
 const gulpif		= require('gulp-if');
 const log			= require('fancy-log');
+const include		= require('gulp-include');
 
 
 /**
@@ -69,10 +70,11 @@ function styles() {
  */
 function scripts() {
 	return src('src/scripts/*.js')
-
-		.pipe(gulpif(isProduction,uglify()))
-		.on("error",sass.logError)
-		.pipe(dest('dist/js/')
+		.pipe(include({
+			includePaths: [__dirname + '/node_modules', __dirname + '/src/scripts']
+		}))
+		// .pipe(gulpif(isProduction,uglify()))
+		.pipe(dest('dist/js')
 	);
 }
 

@@ -1,0 +1,9 @@
+hr, .pre-hr {
+	margin-top: pre-spacing(large);
+	margin-bottom: pre-spacing(large);
+	@extend .pre-border-bottom-primary;
+
+	@include pre-border-colors;
+
+	position: relative;
+}

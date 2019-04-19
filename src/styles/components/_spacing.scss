@@ -1,3 +1,8 @@
+p {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
 
 @each $spaceName, $spaceValue in $pre-spacing {
 	
@@ -37,10 +42,22 @@
 		margin-top: $spaceValue;
 		margin-bottom: $spaceValue;
 	}
+	.pre-margin-none {
+		margin: 0;
+	}
 
 	@each $directionName, $directionValue in $pre-directions {
 		.pre-margin-#{$directionName}-#{$spaceName} {
 			margin-#{$directionName}: $spaceValue;
 		}
+
+		.pre-margin-#{$directionName}-none {
+			margin-#{$directionName}: 0;
+		}
 	}
+  }
+
+
+  @function pre-spacing($spacingName) {
+	  @return map-get($pre-spacing,$spacingName);
   }

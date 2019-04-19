@@ -3,6 +3,8 @@
 
 .pre-container {
 	max-width: 100%;
+	padding-left: $pre-gutter-horizontal;
+	padding-right: $pre-gutter-horizontal;
 
 	@media(min-width: $pre-horizontal-max) {
 		max-width: $pre-horizontal-max;

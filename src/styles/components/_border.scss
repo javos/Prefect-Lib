@@ -3,6 +3,7 @@ $pre-border-width-default: 1px !default;
 $pre-border-style-default: solid !default;
 
 .pre-border {
+	border: none;
 	border: $pre-border-width-default $pre-border-style-default $pre-border-color-default;
 }
 
@@ -42,6 +43,14 @@ $pre-border-style-default: solid !default;
 	@each $directionName, $directionValue in $pre-directions {
 		.pre-border-color-#{$directionName}-#{$colorName} {
 			border-#{$directionName}-color: $colorValue;
+		}
+	}
+}
+
+@mixin pre-border-colors {
+	@each $colorName, $colorValue in $pre-colors {
+		&-#{$colorName} {
+			border-color: $colorValue;
 		}
 	}
 }

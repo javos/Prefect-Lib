@@ -1,3 +1,11 @@
-@function pre-breakpoint($breakpointName) {
-	@return map-get($pre-breakpoints,$breakpointName);
+@function pre-breakpoint($breakpointType,$breakpointName) {
+	@return map-get(map-get($pre-breakpoints,$breakpointType),$breakpointName);
+}
+
+@function pre-font-family($fontType) {
+	@return map-get($pre-font-families,$fontType);
+}
+
+@function pre-font-size($fontType) {
+	@return map-get($pre-font-sizes-fixed,$fontType);
 }

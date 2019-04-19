@@ -1,0 +1,58 @@
+// Font Families
+
+@each $fontType, $fontName in $pre-font-families {
+	.pre-font-#{$fontType} { font-family: $fontName; }
+}
+
+:root {
+	font-family: pre-font-family(default);
+	font-size: pre-font-size(default);
+
+	@media(min-width:pre-breakpoint(min,m)) {
+		font-size: pre-font-size(m);
+	}
+	@media(min-width:pre-breakpoint(min,l)) {
+		font-size: pre-font-size(l);
+	}
+	@media(min-width:pre-breakpoint(min,xl)) {
+		font-size: pre-font-size(xl);
+	}
+}
+
+// Headings
+h1 {
+	font-size: $pre-heading-font-size-h1;
+	font-family: $pre-heading-font-family-h1;
+}
+h2 {
+	font-size: $pre-heading-font-size-h2;
+	font-family: $pre-heading-font-family-h2;
+}
+h3 {
+	font-size: $pre-heading-font-size-h3;
+	font-family: $pre-heading-font-family-h3;
+}
+h4 {
+	font-size: $pre-heading-font-size-h4;
+	font-family: $pre-heading-font-family-h4;
+}
+h5 {
+	font-size: $pre-heading-font-size-h5;
+	font-family: $pre-heading-font-family-h5;
+}
+h6 {
+	font-size: $pre-heading-font-size-h6;
+	font-family: $pre-heading-font-family-h6;
+}
+
+
+// Alignment
+.pre-text-left		{ text-align: left; }
+.pre-text-right		{ text-align: right; }
+.pre-text-center	{ text-align: center; }
+
+
+// Size
+.pre-text-small { font-size: $pre-font-size-small; }
+.pre-text-large { font-size: $pre-font-size-large; }
+.pre-text-medium { font-size: $pre-font-size-large; }

@@ -29,3 +29,28 @@
 	flex-shrink: 0;
 }
 .pre-flex-fluid { @include pre-flex-fluid(); }
+
+
+@each $breakpointName, $breakpointValue in $pre-breakpoints-min {
+	@media(min-width:$breakpointValue) {
+		.pre-flex-column-#{$breakpointName} {
+			flex-direction: column;
+		}
+
+		.pre-flex-row-#{$breakpointName} {
+			flex-direction: row;
+		}
+	}
+}
+
+@each $breakpointName, $breakpointValue in $pre-breakpoints-max {
+	@media(max-width:$breakpointValue) {
+		.pre-flex-column-#{$breakpointName}-max {
+			flex-direction: column;
+		}
+
+		.pre-flex-row-#{$breakpointName}-max {
+			flex-direction: row;
+		}
+	}
+}

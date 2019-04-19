@@ -12,3 +12,14 @@
 	}
 
 }
+
+@each $colorName, $colorValue in $pre-colors-fixed {
+	.pre-color-#{$colorName} {
+		color: $colorValue;
+	}
+
+	.pre-background-color-#{$colorName} {
+		background-color: $colorValue;
+	}
+
+}

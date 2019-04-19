@@ -1,0 +1,58 @@
+$demo-pattern-height: 36px;
+$demo-pattern-width: 79px;
+$demo-pattern-padding: 100px;
+
+#demo-hero {
+	position: relative;
+	overflow: hidden;
+	height: calc(100vh + #{$demo-pattern-height});
+
+	&:after,
+	&:before {
+		content: "";
+		position: absolute;
+		height: $demo-pattern-height;
+		left: 50%;
+		width: calc(100vw + (#{$demo-pattern-padding}*2));
+		transform: translateX(-50%);
+		bottom: $demo-pattern-height;
+		background:  url('../img/demo/demo-bottom-pattern.svg') center left repeat-x;
+		animation: 20s demo-hero-bg infinite;
+	}
+
+	&:before {
+		bottom: 0;
+		transform: rotate(180deg) translateX(50%);
+		transform-origin: center;
+		animation: 20s demo-hero-bg infinite;
+		opacity: 0.3;
+	}
+	
+}
+
+@keyframes demo-hero-bg {
+	0% {
+		background-position-x: left $demo-pattern-padding;
+	}
+	50% {
+		background-position-x: left 0;
+	}
+	100% {
+		background-position-x: left $demo-pattern-padding;
+	}
+}
+
+
+hr {
+	&:before {
+		content: "";
+		width: 24px;
+		height: 16px;
+		background: #fff url("../img/icons/favicon-32.png") center no-repeat;
+		background-size: contain;
+		left: 50%;
+		bottom: 0;
+		position: absolute;
+		transform: translate(-50%,50%);
+	}
+}

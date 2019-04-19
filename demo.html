@@ -18,86 +18,137 @@
 
 	<title>Prefect Lib</title>
 
-	<link rel="stylesheet" href="dist/css/main.css" id="main" />
+	<link rel="stylesheet" href="dist/css/prefect.css" id="main" />
+	<link rel="stylesheet" href="dist/css/demo.css" id="main" />
 </head>
 <body class="pre-height-viewport">
 
-	<div class="pre-container">
-		<header class="demo-hero pre-flex-column pre-flex-center pre-height-viewport pre-border-bottom">
-			<img src="dist/img/icons/icon.svg" alt="">
-			<h1>Prefect Lib</h1>
-			<p>by <a href="http://janisvonseggern.de" target="_blank">janisprefect</a></p>
+	<header id="demo-hero" class="pre-margin-bottom-large">
+		<div class="pre-container pre-flex-column pre-flex-center pre-height-1-1">
+			<img src="dist/img/demo/demo-logo.svg" alt="" class="pre-margin-bottom-medium">
+
+			<div class="pre-margin-bottom-medium pre-text-center">
+				<h1 class="pre-margin-none">Prefect Lib</h1>
+				<p class="pre-color-black7">A personal frontend framework</p>
+				<p>by <a href="http://janisvonseggern.de" target="_blank">janisprefect</a></p>
+			</div>
+
+			<p class="pre-text-small pre-color-black4">(Almost) no documentary. Have Fun.</p>
+		</div>
+	</header>
+
+	<main id="demo-main">
+		<div class="pre-container">
+			<section id="installation">
+				<h2>Installation</h2>
+
+				<ol>
+					<li><code>npm install</code> to install all required packages</li>
+					<li><code>npm i -g gulp</code> to install required task runner</li>
+					<li><code>gulp</code> to build sources for the first time</li>
+				</ol>
+			</section>
+
+			<hr class="pre-hr-lightgray" />
+
+
+			<section id="typography">
+				<h2>Typography</h2>
+
+				<h5>Font Families</h5>
+				<p class="pre-font-default">Default Font</p>
+				<p class="pre-font-monospace">Monospace Font</p>
+			</section>
+
+
+			<section>
+				<h2>Lists</h2>
+
+				<p><code>Unclassed</code></p>
+
+				<ul>
+					<li>List Item 1</li>
+					<li>List Item 2</li>
+					<li>List Item 3
+						<ul>
+							<li>Sub List Item 1</li>
+							<li>Sub List Item 2</li>
+							<li>Sub List Item 3
+								<ul>
+									<li>Sub Sub List Item 1</li>
+									<li>Sub Sub List Item 2</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>List Item 4</li>
+					<li>List Item 5</li>
+				</ul>
+
+				<p><code>.pre-list</code></p>
+				<ul class="pre-list">
+					<li>List Item 1</li>
+					<li>List Item 2</li>
+					<li>List Item 3
+						<ul>
+							<li>Sub List Item 1</li>
+							<li>Sub List Item 2</li>
+							<li>Sub List Item 3
+								<ul>
+									<li>Sub Sub List Item 1</li>
+									<li>Sub Sub List Item 2</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>List Item 4</li>
+					<li>List Item 5</li>
+				</ul>
+
+				<p><code>.pre-list-nested</code></p>
+				<ul class="pre-list-nested">
+					<li>List Item 1</li>
+					<li>List Item 2</li>
+					<li>List Item 3
+						<ul>
+							<li>Sub List Item 1</li>
+							<li>Sub List Item 2</li>
+							<li>Sub List Item 3
+								<ul>
+									<li>Sub Sub List Item 1</li>
+									<li>Sub Sub List Item 2</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>List Item 4</li>
+					<li>List Item 5</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Flex</h2>
+
+				<h5>Responsive Flex</h5>
+				<p><code>column -> row > l</code></p>
+				<div class="pre-flex pre-flex-column pre-flex-row-l">
+					<div>Flex Item</div>
+					<div>Flex Item</div>
+					<div>Flex Item</div>
+					<div>Flex Item</div>
+				</div>
+
+				<p><code>row -> column < l</code></p>
+				<div class="pre-flex pre-flex-row pre-flex-column-l">
+					<div>Flex Item</div>
+					<div>Flex Item</div>
+					<div>Flex Item</div>
+					<div>Flex Item</div>
+				</div>
+			</section>
+		</div>
+	</main>
 	
-			<p>(Almost) no documentary. Have Fun.</p>
-		</header>
-
-
-		<section>
-			<h2>Lists</h2>
-
-			<p><code>Unclassed</code></p>
-
-			<ul>
-				<li>List Item 1</li>
-				<li>List Item 2</li>
-				<li>List Item 3
-					<ul>
-						<li>Sub List Item 1</li>
-						<li>Sub List Item 2</li>
-						<li>Sub List Item 3
-							<ul>
-								<li>Sub Sub List Item 1</li>
-								<li>Sub Sub List Item 2</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>List Item 4</li>
-				<li>List Item 5</li>
-			</ul>
-
-			<p><code>.pre-list</code></p>
-			<ul class="pre-list">
-				<li>List Item 1</li>
-				<li>List Item 2</li>
-				<li>List Item 3
-					<ul>
-						<li>Sub List Item 1</li>
-						<li>Sub List Item 2</li>
-						<li>Sub List Item 3
-							<ul>
-								<li>Sub Sub List Item 1</li>
-								<li>Sub Sub List Item 2</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>List Item 4</li>
-				<li>List Item 5</li>
-			</ul>
-
-			<p><code>.pre-list-nested</code></p>
-			<ul class="pre-list-nested">
-				<li>List Item 1</li>
-				<li>List Item 2</li>
-				<li>List Item 3
-					<ul>
-						<li>Sub List Item 1</li>
-						<li>Sub List Item 2</li>
-						<li>Sub List Item 3
-							<ul>
-								<li>Sub Sub List Item 1</li>
-								<li>Sub Sub List Item 2</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>List Item 4</li>
-				<li>List Item 5</li>
-			</ul>
-		</section>
-	</div>
-	
-	<script src="dist/js/main.js"></script>
+	<script src="dist/js/prefect.js"></script>
 </body>
 </html>
