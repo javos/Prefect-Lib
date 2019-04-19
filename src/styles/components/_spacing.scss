@@ -1,0 +1,46 @@
+
+@each $spaceName, $spaceValue in $pre-spacing {
+	
+	// Padding
+	.pre-padding-#{$spaceName} {
+    	padding: $spaceValue;
+	}
+	
+	.pre-padding-x-#{$spaceName} {
+		padding-left: $spaceValue;
+		padding-right: $spaceValue;
+	}
+
+	.pre-padding-y-#{$spaceName} {
+		padding-top: $spaceValue;
+		padding-bottom: $spaceValue;
+	}
+
+	@each $directionName, $directionValue in $pre-directions {
+		.pre-padding-#{$directionName}-#{$spaceName} {
+			padding-#{$directionName}: $spaceValue;
+		}
+	}
+
+
+	// Margin
+	.pre-margin-#{$spaceName} {
+    	margin: $spaceValue;
+	}
+	
+	.pre-margin-x-#{$spaceName} {
+		margin-left: $spaceValue;
+		margin-right: $spaceValue;
+	}
+
+	.pre-margin-y-#{$spaceName} {
+		margin-top: $spaceValue;
+		margin-bottom: $spaceValue;
+	}
+
+	@each $directionName, $directionValue in $pre-directions {
+		.pre-margin-#{$directionName}-#{$spaceName} {
+			margin-#{$directionName}: $spaceValue;
+		}
+	}
+  }

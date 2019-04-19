@@ -1,0 +1,31 @@
+.pre-flex {
+	display: flex;
+	flex-direction: row;
+}
+
+.pre-flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.pre-flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.pre-flex-center {
+	align-items: center;
+	justify-content: center;
+}
+
+
+@mixin pre-flex-fixed {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.pre-flex-fixed { @include pre-flex-fixed(); }
+@mixin pre-flex-fluid {
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.pre-flex-fluid { @include pre-flex-fluid(); }

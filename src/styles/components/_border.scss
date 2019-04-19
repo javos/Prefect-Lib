@@ -1,0 +1,47 @@
+$pre-border-color-default: pre-color(primary) !default;
+$pre-border-width-default: 1px !default;
+$pre-border-style-default: solid !default;
+
+.pre-border {
+	border: $pre-border-width-default $pre-border-style-default $pre-border-color-default;
+}
+
+@each $directionName, $directionValue in $pre-directions {
+	.pre-border-#{$directionName} {
+		border: none;
+		border-#{$directionName}-width: $pre-border-width-default;
+		border-#{$directionName}-style: $pre-border-style-default;
+		border-#{$directionName}-color: $pre-border-color-default;
+	}
+}
+
+
+// Colors
+@each $colorName, $colorValue in $pre-colors {
+
+	.pre-border-#{$colorName} {
+		border-width: $pre-border-width-default;
+		border-style: $pre-border-style-default;
+		border-color: $colorValue;
+	}
+
+	@each $directionName, $directionValue in $pre-directions {
+		.pre-border-#{$directionName}-#{$colorName} {
+			border: none;
+			border-#{$directionName}-width: $pre-border-width-default;
+			border-#{$directionName}-style: $pre-border-style-default;
+			border-#{$directionName}-color: $colorValue;
+		}
+	}
+
+	// Specific Color Styles
+	.pre-border-color-#{$colorName} {
+		border-color: $colorValue;
+	}
+
+	@each $directionName, $directionValue in $pre-directions {
+		.pre-border-color-#{$directionName}-#{$colorName} {
+			border-#{$directionName}-color: $colorValue;
+		}
+	}
+}

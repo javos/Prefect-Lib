@@ -1,0 +1,54 @@
+//
+// Prefect Lib - Example Variables
+//
+// This is the main variables file. Overwrite these variables in your own variables scss file after importing prefect-lib to change different aspects of the framework.
+
+
+//
+// Window
+//
+$pre-horizontal-max: 1200px !default;
+
+
+//
+// Breakpoints
+// 
+
+$pre-breakpoint-s: 640px !default;
+$pre-breakpoint-m: 960px !default;
+$pre-breakpoint-l: 1200px !default;
+$pre-breakpoint-xl: 1600px !default;
+$pre-breakpoint-xs-max: $pre-breakpoint-s - 1px !default;
+$pre-breakpoint-s-max: $pre-breakpoint-m - 1px !default;
+$pre-breakpoint-m-max: $pre-breakpoint-l - 1px !default;
+$pre-breakpoint-l-max: $pre-breakpoint-xl - 1px !default;
+
+$pre-breakpoints: (
+	s: $pre-breakpoint-s,
+	m: $pre-breakpoint-m,
+	l: $pre-breakpoint-l,
+	xl: $pre-breakpoint-xl,
+	s-max: $pre-breakpoint-s,
+	m-max: $pre-breakpoint-m,
+	l-max: $pre-breakpoint-l,
+) !default;
+
+
+//
+// Colors
+//
+
+$pre-colors: (
+	primary: #9E1212
+) !default;
+
+$pre-link-color-default: map-get($pre-colors,primary) !default;
+
+//
+// Spacing
+//
+$pre-spacing: (
+	small: 16px,
+	medium: 32px,
+	large: 64px
+) !default;

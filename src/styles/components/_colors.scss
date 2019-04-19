@@ -1,0 +1,14 @@
+@function pre-color($colorName) {
+	@return map-get($pre-colors,$colorName);
+}
+
+@each $colorName, $colorValue in $pre-colors {
+	.pre-color-#{$colorName} {
+		color: $colorValue;
+	}
+
+	.pre-background-color-#{$colorName} {
+		background-color: $colorValue;
+	}
+
+}

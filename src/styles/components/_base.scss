@@ -1,0 +1,12 @@
+* { box-sizing: border-box; }
+
+
+.pre-container {
+	max-width: 100%;
+
+	@media(min-width: $pre-horizontal-max) {
+		max-width: $pre-horizontal-max;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

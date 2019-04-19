@@ -1,0 +1,27 @@
+{
+  "name": "prefect-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "autoprefixer": "^9.5.1",
+    "cssnano": "^4.1.10",
+    "del": "^4.1.0",
+    "fancy-log": "^1.3.3",
+    "gulp": "^4.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "normalize-css": "^2.3.1",
+    "yargs": "^13.2.2"
+  }
+}

@@ -1,0 +1,14 @@
+.pre-list {
+	padding-left: 0;
+
+	li { list-style: none; }
+	ul { padding-left: 0; }
+}
+
+
+.pre-list-nested {
+	padding-left: 0;
+
+	li    { list-style: none; }
+	li ul { padding-left: 1em; }
+}
