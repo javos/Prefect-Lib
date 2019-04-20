@@ -44,13 +44,16 @@
 }
 
 @each $breakpointName, $breakpointValue in $pre-breakpoints-max {
-	@media(max-width:$breakpointValue) {
-		.pre-flex-column-#{$breakpointName}-max {
-			flex-direction: column;
+		.pre-flex-column-#{$breakpointName} {
+			@media(max-width:$breakpointValue) {
+				flex-direction: column;
+			}
 		}
 
-		.pre-flex-row-#{$breakpointName}-max {
-			flex-direction: row;
+		.pre-flex-row-#{$breakpointName} {
+			@media(max-width:$breakpointValue) {
+				flex-direction: row;
+			}
 		}
-	}
+	
 }

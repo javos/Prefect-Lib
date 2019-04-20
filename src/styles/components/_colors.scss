@@ -1,7 +1,3 @@
-@function pre-color($colorName) {
-	@return map-get($pre-colors,$colorName);
-}
-
 @each $colorName, $colorValue in $pre-colors {
 	.pre-color-#{$colorName} {
 		color: $colorValue;
@@ -13,7 +9,7 @@
 
 }
 
-@each $colorName, $colorValue in $pre-colors-fixed {
+@each $colorName, $colorValue in $pre-colors-neutral {
 	.pre-color-#{$colorName} {
 		color: $colorValue;
 	}

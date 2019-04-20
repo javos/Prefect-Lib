@@ -2,10 +2,12 @@
 	@return map-get(map-get($pre-breakpoints,$breakpointType),$breakpointName);
 }
 
-@function pre-font-family($fontType) {
-	@return map-get($pre-font-families,$fontType);
-}
 
 @function pre-font-size($fontType) {
-	@return map-get($pre-font-sizes-fixed,$fontType);
+	@return map-get($pre-font-sizes-root,$fontType);
 }
+
+@function pre-color($colorName) {
+	@return map-get($pre-colors,$colorName);
+}
+

@@ -1,4 +1,4 @@
 node_modules
 dist
-vendor
+/vendor
 .DS_Store

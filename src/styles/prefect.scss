@@ -1,11 +1,11 @@
-// External Libraries
-@import 'normalize-css/normalize';
-
 // Base
-@import "helpers";
 @import "variables";
+@import "helpers";
 @import "functions";
 @import "mixins";
+
+// External Libraries
+@import 'vendor';
 
 // Utility
 @import 'components/utility';

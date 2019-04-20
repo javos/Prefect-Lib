@@ -61,7 +61,7 @@ function styles() {
 		.pipe(postcss([ autoprefixer ]))
 		.pipe(gulpif(isProduction,postcss([ cssnano ])))
 		.pipe(gulpif(isDevelopment,sourcemaps.write('.')))
-		.pipe(dest('dist/css/')
+		.pipe(dest('dist/styles/')
 	);
 }
 
@@ -74,7 +74,7 @@ function scripts() {
 			includePaths: [__dirname + '/node_modules', __dirname + '/src/scripts']
 		}))
 		// .pipe(gulpif(isProduction,uglify()))
-		.pipe(dest('dist/js')
+		.pipe(dest('dist/scripts')
 	);
 }
 
@@ -84,7 +84,7 @@ function scripts() {
 function images() {
 	return src('src/images/**/*')
 		.pipe(imagemin())
-		.pipe(dest('dist/img/')
+		.pipe(dest('dist/images/')
 	);
 }
 
@@ -95,13 +95,13 @@ function clean(done) {
 	return del('dist');
 }
 function cleanStyles(done) {
-	return del('dist/css');
+	return del('dist/styles');
 }
 function cleanScripts(done) {
-	return del('dist/js');
+	return del('dist/scripts');
 }
 function cleanImages(done) {
-	return del('dist/img');
+	return del('dist/images');
 }
 
 

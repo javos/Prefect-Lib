@@ -1,21 +1,17 @@
 // Font Families
 
-@each $fontType, $fontName in $pre-font-families {
+@each $fontType, $fontName in $pre-fonts {
 	.pre-font-#{$fontType} { font-family: $fontName; }
 }
 
 :root {
-	font-family: pre-font-family(default);
-	font-size: pre-font-size(default);
+	font-family: $pre-font-default;
+	font-size: pre-font-size(xs);
 
-	@media(min-width:pre-breakpoint(min,m)) {
-		font-size: pre-font-size(m);
-	}
-	@media(min-width:pre-breakpoint(min,l)) {
-		font-size: pre-font-size(l);
-	}
-	@media(min-width:pre-breakpoint(min,xl)) {
-		font-size: pre-font-size(xl);
+	@each $breakpointName, $breakpointValue in $pre-breakpoints-min {
+		@media(min-width:$breakpointValue) {
+			font-size: map-get($pre-font-sizes-root,$breakpointName);
+		}
 	}
 }
 
