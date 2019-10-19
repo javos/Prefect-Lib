@@ -25,8 +25,8 @@
 }
 .pre-flex-fixed { @include pre-flex-fixed(); }
 @mixin pre-flex-fluid {
-	flex-grow: 0;
-	flex-shrink: 0;
+	flex-grow: 1;
+	flex-shrink: 1;
 }
 .pre-flex-fluid { @include pre-flex-fluid(); }
 
