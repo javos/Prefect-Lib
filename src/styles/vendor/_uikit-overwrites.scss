@@ -1,24 +1,24 @@
 // Fonts
 
-$global-font-family: $pre-font-default !default;
+$global-font-family: $pre-font-default;
 
 
 // Breakpoints
 
-$container-max-width: $pre-horizontal-max !default;
+$container-max-width: $pre-horizontal-max;
 
-$breakpoint-small: $pre-breakpoint-s !default;
-$breakpoint-medium: $pre-breakpoint-m !default;
-$breakpoint-large: $pre-breakpoint-l !default;
-$breakpoint-xlarge: $pre-breakpoint-xl !default;
+$breakpoint-small: $pre-breakpoint-s;
+$breakpoint-medium: $pre-breakpoint-m;
+$breakpoint-large: $pre-breakpoint-l;
+$breakpoint-xlarge: $pre-breakpoint-xl;
 
-$breakpoint-xsmall-max: $pre-breakpoint-xs-max !default;
-$breakpoint-small-max: $pre-breakpoint-s-max !default;
-$breakpoint-medium-max: $pre-breakpoint-m-max !default;
-$breakpoint-large-max: $pre-breakpoint-l-max !default;
+$breakpoint-xsmall-max: $pre-breakpoint-xs-max;
+$breakpoint-small-max: $pre-breakpoint-s-max;
+$breakpoint-medium-max: $pre-breakpoint-m-max;
+$breakpoint-large-max: $pre-breakpoint-l-max;
 
 
 
 // Colors
-$global-link-color: map-get($pre-colors,primary);
+$global-link-color: $pre-link-color-default;
 $global-link-hover-color: lighten($global-link-color,20%);
