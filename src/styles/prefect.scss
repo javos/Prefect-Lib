@@ -20,3 +20,7 @@
 @import 'components/links';
 @import 'components/lists';
 @import 'components/hr';
+
+// Shims
+@import 'vendor/uikit-variables';
+@import 'vendor/uikit-overwrites';
