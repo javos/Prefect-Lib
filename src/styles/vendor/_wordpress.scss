@@ -1,0 +1,32 @@
+.wp-caption {
+	margin: 2rem 0;
+
+	.wp-caption-text {
+		margin-top: 0.5rem;
+		font-size: 0.9rem;
+		opacity: 0.5;
+	}
+}
+
+
+.image-alignleft {
+	float: left;
+	margin-right: 2rem;
+}
+.image-alignright {
+	float: right;
+	margin-left: 2rem;
+}
+.image-alignleft,
+.image-alignright {
+	margin-bottom: 2rem;
+
+	.wp-caption { margin:0; }
+}
+
+
+@media(min-width: $breakpoint-medium) {
+
+	.image-alignleft {}
+	.image-alignright {}
+}
